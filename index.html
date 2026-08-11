@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kapil Taspa</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">KT<span class="dot">_</span></a>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="https://drive.google.com/file/d/1Kjp03B5ue5Gq_niwlnRkBbIlBrVnQeGF/view?usp=sharing" target="_blank" class="btn-outline">Resume ↗</a>
+    </div>
+  </nav>
+
+  <!-- HERO + ABOUT (combined) -->
+  <section id="hero">
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="hero-inner">
+
+      <!-- LEFT: photo + social -->
+      <div class="hero-photo-col">
+        <div class="profile-glow-wrap">
+          <div class="profile-frame">
+            <img src="assets/img/headshot.jpg" alt="Kapil Taspa" />
+          </div>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/kapiltaspa/" target="_blank" class="si" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.6"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/kapiltaspa" target="_blank" class="si" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://github.com/ktaspa" target="_blank" class="si" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: text -->
+      <div class="hero-text-col">
+        <h1 class="hero-name">Kapil Taspa</h1>
+        <p class="hero-role"><span id="typed-role">Data Scientist</span><span class="cursor">|</span></p>
+        <p class="hero-bio">I build things that ship. From data pipelines at State Farm & Liberty Mutual to founding apps with <strong>1K+ users</strong> and leading product for <strong>60K+ students</strong>. I'm passionate about the intersection of AI, data, and entrepreneurship.</p>
+
+        <div class="hero-meta">
+          <div class="meta-item">
+            <span class="meta-label">Email</span>
+            <a href="mailto:kapiltaspa@utexas.edu">kapiltaspa@utexas.edu</a>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">School</span>
+            <span>University of Texas at Austin · B.S. Data Science &amp; Statistics</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Location</span>
+            <span>Austin, TX</span>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="mailto:kapiltaspa@utexas.edu" class="btn-ghost">Get in Touch</a>
+        </div>
+
+        <div class="interest-chips">
+          <span>⬡ Agentic AI</span>
+          <span>∑ Data Science</span>
+          <span>◈ Trading &amp; Investing</span>
+          <span>◎ Entrepreneurship</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="scroll-hint">scroll <span class="arrow">↓</span></div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-label">01 / Experience</div>
+    <h2 class="section-title">Where I've Worked</h2>
+    <div class="exp-list">
+
+      <div class="exp-card">
+        <div class="exp-logo-wrap"><img src="assets/img/logo-statefarm.jpg" alt="State Farm" class="exp-logo"/></div>
+        <div class="exp-info">
+          <div class="exp-top">
+            <div><h3 class="exp-company">State Farm Insurance</h3><span class="exp-role">Data Engineering Intern</span></div>
+            <span class="exp-date">May 2026 – Aug 2026</span>
+          </div>
+          <span class="exp-location">Richardson, TX</span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-logo-wrap"><img src="assets/img/logo-liberty.jpg" alt="Liberty Mutual" class="exp-logo"/></div>
+        <div class="exp-info">
+          <div class="exp-top">
+            <div><h3 class="exp-company">Liberty Mutual Insurance</h3><span class="exp-role">Data Science Intern</span></div>
+            <span class="exp-date">May 2025 – Aug 2025</span>
+          </div>
+          <span class="exp-location">Plano, TX</span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-logo-wrap"><img src="assets/img/logo-cacao.jpg" alt="Cacao.tax" class="exp-logo"/></div>
+        <div class="exp-info">
+          <div class="exp-top">
+            <div><h3 class="exp-company">Cacao.tax</h3><span class="exp-role">Software Engineering Intern</span></div>
+            <span class="exp-date">Aug 2024 – Jan 2025</span>
+          </div>
+          <span class="exp-location">Austin, TX</span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-logo-wrap"><img src="assets/img/logo-retek.jpg" alt="Retek Properties" class="exp-logo"/></div>
+        <div class="exp-info">
+          <div class="exp-top">
+            <div><h3 class="exp-company">Retek Properties</h3><span class="exp-role">Data Analyst Intern</span></div>
+            <span class="exp-date">June 2024 – Aug 2024</span>
+          </div>
+          <span class="exp-location">Richardson, TX</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">02 / Projects</div>
+    <h2 class="section-title">What I've Built</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="proj-header">
+          <div class="proj-logo-wrap"><img src="assets/img/logo-revv.jpg" alt="Revv" class="proj-logo"/></div>
+          <div class="proj-title-block">
+            <div class="proj-num-row"><span class="proj-num">01</span></div>
+            <h3>Revv App</h3>
+            <div class="proj-tags"><span>Co-Founder</span><span>Startup</span></div>
+          </div>
+        </div>
+        <p>Social platform for car enthusiasts and events.</p>
+        <a href="https://www.joinrevv.com/" target="_blank" class="proj-link">joinrevv.com ↗</a>
+      </div>
+
+      <div class="project-card">
+        <div class="proj-header">
+          <div class="proj-logo-wrap"><img src="assets/img/logo-flock.jpg" alt="Flock" class="proj-logo"/></div>
+          <div class="proj-title-block">
+            <div class="proj-num-row"><span class="proj-num">02</span></div>
+            <h3>Flock App</h3>
+            <div class="proj-tags"><span>Founder</span><span>iOS</span></div>
+          </div>
+        </div>
+        <p>iOS heatmap for UT Austin events. 1K+ MAUs, YC-backed partner.</p>
+        <a href="https://apps.apple.com/us/app/flock-find-the-best-parties/id6752629050" target="_blank" class="proj-link">App Store ↗</a>
+      </div>
+
+      <div class="project-card">
+        <div class="proj-header">
+          <div class="proj-logo-wrap"><img src="assets/img/logo-supermailr.jpg" alt="SuperMailr" class="proj-logo"/></div>
+          <div class="proj-title-block">
+            <div class="proj-num-row"><span class="proj-num">03</span></div>
+            <h3>SuperMailr</h3>
+            <div class="proj-tags"><span>Founder</span><span>AI</span></div>
+          </div>
+        </div>
+        <p>AI marketing platform for smarter email campaigns at scale.</p>
+        <a href="http://supermailr.com" target="_blank" class="proj-link">supermailr.com ↗</a>
+      </div>
+
+      <div class="project-card">
+        <div class="proj-header">
+          <div class="proj-logo-wrap"><img src="assets/img/logo-clawfund.jpg" alt="ClawFund" class="proj-logo"/></div>
+          <div class="proj-title-block">
+            <div class="proj-num-row"><span class="proj-num">04</span></div>
+            <h3>ClawFund</h3>
+            <div class="proj-tags"><span>LLM Agents</span><span>Finance</span></div>
+          </div>
+        </div>
+        <p>Multi-agent hedge fund simulating autonomous trading decisions.</p>
+      </div>
+
+      <div class="project-card">
+        <div class="proj-header">
+          <div class="proj-logo-wrap"><img src="assets/img/logo-utrp.png" alt="UT Registration Plus" class="proj-logo"/></div>
+          <div class="proj-title-block">
+            <div class="proj-num-row"><span class="proj-num">05</span></div>
+            <h3>UT Registration Plus</h3>
+            <div class="proj-tags"><span>Product Lead</span><span>60K+ users</span></div>
+          </div>
+        </div>
+        <p>Largest student app at UT Austin. Led product roadmap &amp; features.</p>
+        <a href="https://chromewebstore.google.com/detail/ut-registration-plus/hboadpjkoaieogjimneceaahlppnipaa" target="_blank" class="proj-link">Chrome Store ↗</a>
+      </div>
+
+      <div class="project-card">
+        <div class="proj-header">
+          <div class="proj-logo-wrap"><img src="assets/img/logo-zilloader.jpg" alt="Zilloader" class="proj-logo"/></div>
+          <div class="proj-title-block">
+            <div class="proj-num-row"><span class="proj-num">06</span></div>
+            <h3>Zilloader</h3>
+            <div class="proj-tags"><span>Python</span><span>Data</span></div>
+          </div>
+        </div>
+        <p>Zillow scraper for Retek Properties to find best properties.</p>
+        <a href="https://github.com/ktaspa/Zilloader" target="_blank" class="proj-link">GitHub ↗</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label">03 / Contact</div>
+    <div class="contact-grid">
+      <div class="contact-left">
+        <h2 class="section-title">Let's Connect</h2>
+        <p>Feel free to DM me on any platform!</p>
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/kapiltaspa/" target="_blank" class="social-link">LinkedIn ↗</a>
+          <a href="https://www.instagram.com/kapiltaspa" target="_blank" class="social-link">Instagram ↗</a>
+          <a href="https://github.com/ktaspa/" target="_blank" class="social-link">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <div class="contact-card">
+          <div class="cc-item">
+            <span class="cc-label">Email</span>
+            <a href="mailto:kapiltaspa@utexas.edu">kapiltaspa@utexas.edu</a>
+          </div>
+          <div class="cc-divider"></div>
+          <div class="cc-item">
+            <span class="cc-label">Phone</span>
+            <a href="tel:2146775437">+1 214-677-5437</a>
+          </div>
+          <div class="cc-divider"></div>
+          <div class="cc-item">
+            <span class="cc-label">Location</span>
+            <span>Austin, TX, USA</span>
+          </div>
+          <div class="cc-divider"></div>
+          <a href="https://drive.google.com/file/d/1Kjp03B5ue5Gq_niwlnRkBbIlBrVnQeGF/view?usp=sharing" target="_blank" class="btn-primary full-width">Download Resume ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">KT<span class="dot">_</span></span>
+      <span class="footer-copy">© 2026 Kapil Taspa</span>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/kapiltaspa/" target="_blank">LI</a>
+        <a href="https://www.instagram.com/kapiltaspa" target="_blank">IG</a>
+        <a href="https://github.com/ktaspa/" target="_blank">GH</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
