@@ -527,8 +527,9 @@ footer { border-top: 1px solid var(--border); padding: 24px 48px; }
 }
 .footer-logo { font-family: var(--font-m); font-weight: 700; font-size: 1rem; }
 .footer-copy { font-family: var(--font-m); font-size: 0.64rem; color: var(--gray); letter-spacing: 0.05em; margin-left: auto; }
-.footer-links { display: flex; gap: 14px; }
-.footer-links a { font-family: var(--font-m); font-size: 0.68rem; color: var(--gray); letter-spacing: 0.1em; transition: color 0.2s; }
+.footer-links { display: flex; gap: 16px; align-items: center; }
+.footer-links a { display: flex; align-items: center; justify-content: center; color: var(--gray); transition: color 0.2s; }
+.footer-links a svg { width: 16px; height: 16px; }
 .footer-links a:hover { color: var(--cyan); }
 
 /* ── SCROLL REVEAL ───────────────────────── */
